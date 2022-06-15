@@ -1,0 +1,13 @@
+import random
+
+class Empleados():
+    def __init__(self):
+        self.name=input("Nombre del empleado:")
+        self.surname=input("Apellido del empleado:")
+        self.sueldo=random.randint(1500,2200)
+        self.email=self.name+str(self.sueldo)+"@email.com"
+    def datos_empleado(self):
+        print(self.name + "" + self.surname + " cuyo email es: " + self.email + " cobra: " + str(self.sueldo))
+
+Empleado=Empleados()
+Empleado.datos_empleado()
