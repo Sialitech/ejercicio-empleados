@@ -6,7 +6,7 @@ class Empleados():
         self.name=input("Nombre del empleado:")
         self.surname=input("Apellido del empleado:")
         self.sueldo=random.randint(1500,2200)
-        self.email=self.name+str(self.sueldo)+"@email.com"
+        self.email=self.name+self.surname+"@email.com"
     def datos_empleado(self):
         print(self.name + "" + self.surname + " cuyo email es: " + self.email + " y cuyo id es: " + str(self.id) + " cobra: " + str(self.sueldo))
 
