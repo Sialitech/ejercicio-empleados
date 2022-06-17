@@ -1,13 +1,14 @@
 from empleado import Empleado
 
+empleado_list = []
 
-empleado_1 = Empleado("Juan, Sanchez, 2000")
-empleado_2 = Empleado("John, Frost, 1800")
-empleado_3 = Empleado("Anatoli, Volga, 2200")
-empleado_4 = Empleado("Luigi, Ferrari, 1870")
+with open("lista_empleados.txt") as file:
+    for line in file:
+        empleado_list.append(Empleado(line))
 
-print(empleado_1 + empleado_2)
+print(empleado_list[0] + empleado_list[1])
 
-print(empleado_1)
+for empleado in empleado_list:
+    print(empleado)
 
 print("et voila!")
