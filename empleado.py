@@ -26,19 +26,19 @@ class Empleado:
 class CEO(Empleado):
 
     def __init__(self, data):
-        Empleado.__init__(self,data)
-        self.empleado_list = []
+        Empleado.__init__(self, data)
+        self.employee_list = []
 
     def __str__(self):
         return "El CEO {} {} cobra {}".format(self.name, self.surname, self.pay)
 
     def add_employee(self, data_employee):
-        self.empleado_list.append(Empleado(data_employee))
+        self.employee_list.append(Empleado(data_employee))
 
     def remove_employee(self, employee_id):
-        self.empleado_list.remove(self.empleado_list[employee_id])
+        self.employee_list.remove(self.employee_list[employee_id])
 
-    def print_empleados(self):
-        for empleado in self.empleado_list:
-            print(empleado)
+    def print_employees(self):
+        for employee in self.employee_list:
+            print(employee)
 
