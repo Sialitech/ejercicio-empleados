@@ -22,3 +22,18 @@ class Empleado:
     def pay_rise(self):
         self.pay = round(1.15 * self.pay)
 
+
+class CEO(Empleado):
+
+    def __init__(self, data):
+        Empleado.__init__(self,data)
+        self.empleado_list = []
+
+    def __str__(self):
+        return "El CEO {} {} cobra {}".format(self.name, self.surname, self.pay)
+
+    def add_employee(self, data_employee):
+        self.empleado_list.append(Empleado(data_employee))
+
+    def remove_employee(self, employee_id):
+        self.empleado_list.remove(self.empleado_list[employee_id])
