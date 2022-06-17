@@ -41,3 +41,4 @@ class CEO(Empleado):
     def print_empleados(self):
         for empleado in self.empleado_list:
             print(empleado)
+
