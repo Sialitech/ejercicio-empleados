@@ -15,6 +15,9 @@ class Empleado:
     def __str__(self):
         return "El empleado {} {} cobra {}".format(self.name, self.surname, self.pay)
 
+    def __add__(self, other):
+        return other.pay + self.pay
+
     def pay_rise(self):
         self.pay = round(1.15 * self.pay)
 
