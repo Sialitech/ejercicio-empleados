@@ -10,6 +10,6 @@ class Empleados():
     def datos_empleado(self):
         print(self.name + "" + self.surname + " cuyo email es: " + self.email + " y cuyo id es: " + str(self.id) + " cobra: " + str(self.sueldo))
 
-    Empleado = Empleados()
-    Empleado.datos_empleado()
+Empleado = Empleados()
+Empleado.datos_empleado()
     
