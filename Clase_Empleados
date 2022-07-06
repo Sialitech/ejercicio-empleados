@@ -1,5 +1,5 @@
 import random
-i=0
+
 class Empleados():
     def __init__(self):
         self.id=i
@@ -10,7 +10,6 @@ class Empleados():
     def datos_empleado(self):
         print(self.name + "" + self.surname + " cuyo email es: " + self.email + " y cuyo id es: " + str(self.id) + " cobra: " + str(self.sueldo))
 
-while True:
-    i+=1
-    Empleado=Empleados()
+    Empleado = Empleados()
     Empleado.datos_empleado()
+    
